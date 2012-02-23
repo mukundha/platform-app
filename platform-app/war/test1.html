@@ -1,0 +1,24 @@
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<script src="test.js"></script>
+</head>
+  <body>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <div id="fb-root"></div>
+    <script>
+      FB.init({appId: '226048147416143', xfbml: true, cookie: true, oauth: true});
+      
+      setnominee();
+      getme();
+     </script>
+    <div id="hello">Hello Retreiving Your Name</div>
+    <img id="myimage" alt="" src="">
+    <p/>
+    <button id="nominate" name="Nominate" value="Nominate" onclick="nominate()">Nominate Yourself</button>
+    <p/>
+    <button id="vote" name="Vote For Your Friend" value="Vote" onclick="vote()">Vote</button>
+    <img id="nomineeimage" alt="" src="">
+    <p/>
+    <div id="myfriends"></div> 
+  </body>
+</html>

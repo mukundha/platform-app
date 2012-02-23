@@ -1,0 +1,24 @@
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<script src="test.js"></script>
+</head>
+  <body>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <div id="fb-root"></div>
+    <script>
+      // assume we are already logged in
+      FB.init({appId: '226048147416143', xfbml: true, cookie: true, oauth: true});
+      //FB.login(function(response){loginCallback(response);} , {scope: 'user_birthday'});
+      getme();
+     </script>
+     
+    <div id="hello">Hello Retrieving your Name...</div>
+    <img id="myimage" alt="" src="">
+    <p/>
+    <button id="nominate" name="Nominate" value="Nominate" onclick="nominate()">Nominate</button>
+    <p/>
+    <button id ="nominateFriends" name="Nominate Friends" value="Nominate Friends" onclick="populateFriends()">Nominate Your Friend</button>
+    <p/>
+    <div id="myfriends"></div> 
+  </body>
+</html>
